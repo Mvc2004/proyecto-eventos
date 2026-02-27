@@ -1,5 +1,5 @@
-Gestión de Eventos
-Autora
+## Gestión de Eventos
+# Autora
 
 Merly Velásquez
 Ingeniería de Sistemas – Universidad del Valle
