@@ -1,0 +1,50 @@
+<h2>Crear Evento</h2>
+
+<form (ngSubmit)="crearEvento()" #eventoForm="ngForm" style="margin-bottom: 24px;">
+
+  <mat-form-field appearance="outline" style="display:block; margin-bottom:10px;">
+    <mat-label>Nombre</mat-label>
+    <input matInput [(ngModel)]="nuevoEvento.nombre" name="nombre" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="display:block; margin-bottom:10px;">
+    <mat-label>Descripción</mat-label>
+    <input matInput [(ngModel)]="nuevoEvento.descripcion" name="descripcion" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="display:block; margin-bottom:10px;">
+    <mat-label>Fecha Inicio</mat-label>
+    <input matInput type="date" [(ngModel)]="nuevoEvento.fecha_inicio" name="fecha_inicio" required>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" style="display:block; margin-bottom:10px;">
+    <mat-label>Fecha Fin</mat-label>
+    <input matInput type="date" [(ngModel)]="nuevoEvento.fecha_fin" name="fecha_fin" required>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit">
+    Crear Evento
+  </button>
+
+</form>
+
+
+<h1>Lista de Eventos</h1>
+
+<div *ngIf="eventos.length === 0">
+  <p>No hay eventos registrados.</p>
+</div>
+
+<mat-card *ngFor="let evento of eventos" style="margin-bottom: 16px;">
+  
+  <mat-card-header>
+    <mat-card-title>{{ evento.nombre }}</mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <p>{{ evento.descripcion }}</p>
+    <p><strong>Inicio:</strong> {{ evento.fecha_inicio }}</p>
+    <p><strong>Fin:</strong> {{ evento.fecha_fin }}</p>
+  </mat-card-content>
+
+</mat-card>
