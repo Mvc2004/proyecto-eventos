@@ -1,56 +1,56 @@
-## Gestión de Eventos
-# Autora
+# Gestión de Eventos
+## Autora
 
-Merly Velásquez
+Merly Velásquez Cortez
 Ingeniería de Sistemas – Universidad del Valle
 
-Descripción General
+## Descripción General
 
 Este proyecto consiste en el desarrollo de una aplicación Full Stack para la gestión de eventos.
 
-La aplicación permite:
+## La aplicación permite:
 
-Crear eventos
+- Crear eventos
 
-Listar eventos almacenados en base de datos
+- Listar eventos almacenados en base de datos
 
-Persistir información en PostgreSQL
+- Persistir información en PostgreSQL
 
-Visualizar los datos mediante una interfaz moderna con Angular Material
+- Visualizar los datos mediante una interfaz moderna con Angular Material
 
-El sistema está dividido en dos capas principales:
+## El sistema está dividido en dos capas principales:
 
-Backend (API REST)
+- Backend (API REST)
 
-Frontend (Aplicación Angular)
+- Frontend (Aplicación Angular)
 
-Arquitectura
+- Arquitectura
 
-La aplicación sigue una arquitectura cliente-servidor:
+## La aplicación sigue una arquitectura cliente-servidor:
 
-Frontend (Angular)
-⬇ HTTP
-Backend (Node.js + Express)
-⬇
-Base de datos (PostgreSQL)
+ Frontend (Angular)
+ ⬇ HTTP
+ Backend (Node.js + Express)
+ ⬇
+ Base de datos (PostgreSQL)
 
 El backend expone endpoints REST que son consumidos por el frontend mediante HttpClient.
 
-Tecnologías Utilizadas
+## Tecnologías Utilizadas
 Backend
 
-Node.js
+- Node.js
 
-Express
+- Express
 
-PostgreSQL
+- PostgreSQL
 
-pg (driver de conexión)
+- pg (driver de conexión)
 
 Frontend
 
-Angular (Standalone Components)
+- Angular (Standalone Components)
 
-Angular Material
+- Angular Material
 
-TypeScript
+- TypeScript
